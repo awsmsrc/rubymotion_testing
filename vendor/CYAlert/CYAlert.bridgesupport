@@ -1,0 +1,9 @@
+<?xml version='1.0'?>
+<signatures version='1.0'>
+<class name='CYAlert'>
+<method selector='show:' class_method='true'>
+<arg type='@' declared_type='NSString*' index='0' name='message'/>
+<retval type='v' declared_type='void'/>
+</method>
+</class>
+</signatures>
