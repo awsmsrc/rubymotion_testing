@@ -1,6 +1,5 @@
 class Burger
   PROPERTIES = [:cheese, :ketchup, :salad, :double, :vegetarian]
-
   attr_accessor *PROPERTIES
 
   def self.with_ingredients(ingredients = [])
@@ -33,10 +32,10 @@ class Burger
 
   def total_calories
     c = base_calories
-    c += cheese_calories     if self.cheese
-    c += ketchup_calories    if self.ketchup
-    c += double_calorie      if self.double
-    c += vegetarian_calories if self.vegetarian
+    c += cheese_calories     if cheese
+    c += ketchup_calories    if ketchup
+    c += double_calorie      if double
+    c += vegetarian_calories if vegetarian
     c
   end
 
@@ -62,10 +61,10 @@ class Burger
 
   def total_price
     p = base_price
-    p += cheese_price if self.cheese 
-    p += ketchup_price if self.ketchup 
-    p += salad_price if self.salad
-    p += double_price if self.double 
+    p += cheese_price  if cheese
+    p += ketchup_price if ketchup
+    p += salad_price   if salad
+    p += double_price  if double
     sprintf('£%.2f', p)
   end
 end

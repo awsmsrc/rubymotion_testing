@@ -1,6 +1,5 @@
 class ViewController < UIViewController
   MENUITEMS = [:ketchup, :salad, :cheese, :double, :vegetarian]
-
   attr_accessor *MENUITEMS
   attr_accessor :burger, :button, :price_label
 
